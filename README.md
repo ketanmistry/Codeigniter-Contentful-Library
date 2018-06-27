@@ -10,7 +10,8 @@ Your contentful entries must have a field named `urlHandle`. This is what is use
 All methods are called using the usual CodeIgniter syntax, for example:
 
 ```
-$this->contentful->get('entries');
+// $params is an array of parameters to pass as url queries to help filter content (See Contentful API docs for available parameters).
+$this->contentful->get('entries', $params=array());
 ```
 
 ## Author
